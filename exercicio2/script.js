@@ -1,15 +1,39 @@
-let nacionalidade = prompt("digite aqui a nacionalidade").toLowerCase();
 
-if(nacionalidade === "brasileira"){
-    console.log("a pessoa é do Brasil!");
-} else if(nacionalidade === "argentina"){
-    console.log("a pessoa é da Argentina!");
+const nacionalidade = prompt("digite aqui o país que você nasceu")//.toLowerCase();
+
+
+if(nacionalidade === "Brasil"){
+   // console.log("Você é brasileiro(a)!");
+} else if(nacionalidade === "Argentina"){
+  //  console.log("Você é argentino(a)!");
 } else if(nacionalidade === "uruguaia"){
-    console.log("a pessoa é do Uruguai!");
-} else if(nacionalidade === "chilena"){
-    console.log("a pessoa é do Chile!");
-} else if(nacionalidade === "colombiana"){
-    console.log("a pessoa é da Colômbia!");
+  //  console.log("Você é uruguaio(a)!");
+} else if(nacionalidade === "Chile"){
+  //  console.log("Você é chileno(a)!");
+} else if(nacionalidade === "Colombia"){
+   // console.log("Você é colombiano(a)!");
 } else{
-    console.log("nacionalidade não encontrada")
+  //  console.log("nacionalidade não encontrada")
+}
+
+
+switch (nacionalidade) {
+    case "Brasil":
+        console.log("Você é brasileiro(a)!");
+        break;
+    case "Argentina":
+        console.log("Você é argentino(a)!");    
+        break;
+    case "Uruguai":
+        console.log("Você é uruguaio(a)!");        
+        break;
+    case "Chile":
+        console.log("Você é chileno(a)!");           
+        break;
+    case "Colombia":
+        console.log("Você é colombiano(a)!");           
+        break;
+    default: 
+    console.log("Nacionalidade não encontrada");
+        break;
 }
